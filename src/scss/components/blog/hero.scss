@@ -1,0 +1,262 @@
+.hero {
+  padding: 95px 0 0;
+
+  @include tablet {
+    padding: 75px 0 0;
+  }
+
+  @include small-tablet {
+    padding: 50px 0 0;
+  }
+
+  @include small-mobile {
+padding: 30px 0 0;
+  }
+
+  &-decor {
+    &::after {
+      transform: translateY(-500px) translateX(-200px);
+    }
+
+    @include small-desktop {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 53px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: -3px;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      font-size: 56px;
+    }
+
+    @include small-tablet {
+      font-size: 50px;
+    }
+
+    @include small-mobile {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 128px 105px;
+    max-width: 674px;
+
+    @include tablet {
+      margin: 0 0 100px 105px;
+      font-size: 24px;
+    }
+
+    @include small-tablet {
+      margin: 0 0 70px 105px;
+      font-size: 22px;
+    }
+
+    @include mobile {
+      margin: 0 0 50px 105px;
+    }
+
+    @include small-mobile {
+      margin: 0 0 30px 105px;
+      font-size: 16px;
+    }
+
+    &::before {
+      position: absolute;
+      transform: translateY(-44px) translateX(-103px);
+    }
+  }
+
+  .nav {
+    position: relative;
+    margin-bottom: 90px;
+    font-weight: 500;
+    line-height: 162%;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      margin-bottom: 60px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      gap: 44px;
+      max-width: 100%;
+
+      @include small-tablet {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      @include mobile {
+        gap: 15px;
+      }
+
+      @include small-mobile {
+        gap: 8px;
+      }
+    }
+
+    &__link {
+      @include small-tablet {
+        font-size: 18px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+
+      @include small-mobile {
+        font-size: 14px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        left: 0;
+        height: 1px;
+        background-color: var(--neutral-color-100);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity var(--transition),
+          visibility var(--transition);
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    margin-bottom: 168px;
+
+    @include tablet {
+      margin-bottom: 130px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 100px;
+    }
+
+    @include mobile {
+      margin-bottom: 70px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__view {
+    &-img {
+      margin-bottom: 16px;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      max-width: 515px;
+
+      @include mobile {
+        margin-bottom: 12px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 4px;
+      }
+    }
+
+    &-data {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+
+      @include small-mobile {
+        font-size: 12px;
+      }
+    }
+
+    &-author {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+
+      @include small-mobile {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__img {
+    &-title {
+      margin-bottom: 16px;
+      max-width: 405px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      color: var(--neutral-color-100);
+
+      @include small-tablet {
+        font-size: 28px;
+      }
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 0;
+        font-size: 22px;
+      }
+    }
+
+    &-desc {
+      max-width: 332px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--neutral-color-150);
+
+      @include small-tablet {
+        font-size: 18px;
+      }
+
+      @include small-mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
