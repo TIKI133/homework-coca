@@ -1,0 +1,35 @@
+.descr {
+  padding: 120px 0;
+  background-color: var(--black-bg-color);
+
+  &__content {
+    &-top {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 159px;
+    }
+
+    &-img {
+      max-width: 584px;
+    }
+  }
+
+  &__img {
+    &-title {
+      margin-bottom: 24px;
+      max-width: 583px;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+      color: var(--neutral-color-10);
+    }
+
+    &-subtitle {
+      max-width: 515px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      color: var(--neutral-color-150);
+    }
+  }
+}
