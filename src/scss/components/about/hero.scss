@@ -1,0 +1,120 @@
+.hero {
+  padding: 105px 0 0;
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 959px;
+  }
+
+  &__title {
+    margin-bottom: 118px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: -3px;
+    color: var(--neutral-color-100);
+  }
+
+  &__subtitle {
+    max-width: 738px;
+
+    &::before {
+      position: absolute;
+      transform: translateY(-84px) translateX(-103px);
+    }
+  }
+
+  &__touch {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-170px);
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 250px;
+  }
+
+  &__img {
+    &-title {
+      margin: 24px 0 8px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 150%;
+      letter-spacing: -1%;
+      text-align: left;
+      color: var(--neutral-color-100);
+    }
+
+    &-subtitle {
+      margin-bottom: 32px;
+      max-width: 494px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: left;
+      color: var(--neutral-color-150);
+    }
+
+    &-btn {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: var(--neutral-color-10);
+      background: var(--neutral-color-100);
+      padding: 16px 32px 16px 32px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 1200px;
+    height: 1px;
+    background-color: var(--neutral-color-40);
+    transform: translateX(350px) translateY(-80px);
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1200px;
+    height: 1px;
+    background-color: var(--neutral-color-40);
+    transform: translateX(355px) translateY(1560px);
+  }
+
+  &__powerful {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    margin-bottom: 160px;
+
+    &-title {
+      max-width: 480px;
+      max-height: 134px;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 120%;
+      letter-spacing: -2px;
+      color: var(--neutral-color-100);
+    }
+
+    &-desc {
+      max-width: 522px;
+      max-height: 144px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+  }
+}
