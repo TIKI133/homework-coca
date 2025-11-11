@@ -1,10 +1,15 @@
 .team {
   padding-top: 85px;
 
+  @include tablet {
+        padding-top: 40px;
+      }
+
   &__developer {
     gap: 24;
     flex-direction: column;
     max-width: 903px;
+
 
     &-title {
       margin-bottom: 24px;
@@ -13,6 +18,18 @@
       line-height: 120%;
       letter-spacing: -2px;
       color: var(--neutral-color-100);
+
+      @include small-tablet {
+        font-size: 48px;
+      }
+
+      @include mobile {
+        font-size: 44px;
+      }
+
+      @include small-mobile {
+        font-size: 38px;
+      }
     }
 
     &-subtitle {
@@ -21,15 +38,41 @@
       font-size: 18px;
       line-height: 32px;
       color: var(--neutral-color-50);
+
+      @include mobile {
+        margin-bottom: 60px;
+        font-size: 16px;
+      }
+
+      @include small-mobile {
+        margin-bottom: 40px;
+        text-align: center;
+      }
     }
 
     &-img {
       margin-bottom: 16px;
+
+      @include small-tablet {
+        margin-bottom: 8px;
+      }
+
+      @include mobile {
+        margin-bottom: 0;
+      }
     }
 
     &-desc {
       display: flex;
       justify-content: space-between;
+
+      @include tablet {
+        flex-direction: column;
+      }
+
+      @include small-mobile {
+        flex-direction: row;
+      }
     }
 
     &-name {
@@ -38,6 +81,19 @@
       font-size: 24px;
       line-height: 150%;
       color: var(--neutral-color-100);
+
+      @include small-tablet {
+        margin-bottom: 5px;
+        font-size: 20px;
+
+        @include mobile {
+          font-size: 16px;
+        }
+
+        @include small-mobile {
+          font-size: 20px;
+        }
+      }
     }
 
     &-socials {
@@ -45,16 +101,37 @@
       gap: 8px;
     }
 
+
     &-position {
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
       color: var(--neutral-color-50);
+
+      @include small-tablet {
+        font-size: 16px;
+
+        @include mobile {
+          font-size: 14px;
+        }
+
+        @include small-mobile {
+          font-size: 18px;
+        }
+      }
     }
   }
 
   &__slider {
     margin-bottom: 105px;
+
+    @include small-tablet {
+      margin-bottom: 80px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__wrapper {
@@ -71,6 +148,19 @@
     justify-content: space-between;
     margin-bottom: 160px;
 
+    @include mini-desktop {
+      flex-direction: column;
+    }
+
+    @include small-tablet {
+        gap: 50px;
+        margin-bottom: 100px;
+      }
+
+      @include small-mobile {
+        gap: 25px;
+      }
+
     &-title {
       max-width: 626px;
       font-weight: 600;
@@ -78,6 +168,18 @@
       line-height: 120%;
       letter-spacing: -2px;
       color: var(--neutral-color-100);
+
+      @include small-tablet {
+        font-size: 48px;
+      }
+
+      @include mobile {
+        font-size: 44px;
+      }
+
+      @include small-mobile {
+        font-size: 38px;
+      }
     }
 
     &-subtitle {
@@ -85,6 +187,10 @@
       font-size: 18px;
       line-height: 32px;
       color: var(--neutral-color-50);
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
 
     &-btn {
