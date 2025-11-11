@@ -2,14 +2,13 @@
   padding-top: 85px;
 
   @include tablet {
-        padding-top: 40px;
-      }
+    padding-top: 40px;
+  }
 
   &__developer {
     gap: 24;
     flex-direction: column;
     max-width: 903px;
-
 
     &-title {
       margin-bottom: 24px;
@@ -101,7 +100,6 @@
       gap: 8px;
     }
 
-
     &-position {
       font-weight: 500;
       font-size: 18px;
@@ -153,13 +151,13 @@
     }
 
     @include small-tablet {
-        gap: 50px;
-        margin-bottom: 100px;
-      }
+      gap: 50px;
+      margin-bottom: 100px;
+    }
 
-      @include small-mobile {
-        gap: 25px;
-      }
+    @include small-mobile {
+      gap: 25px;
+    }
 
     &-title {
       max-width: 626px;
