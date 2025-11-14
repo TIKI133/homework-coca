@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css';
+import { Navigation } from 'swiper/modules';
 
 export const useBlogSlider = () => {
   new Swiper('.hero__slider', {
@@ -18,6 +19,17 @@ export const useBlogSlider = () => {
       1201: {
         slidesPerView: 2.2,
       },
+    },
+  });
+};
+
+export const useArticlesSlider = () => {
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
+    slidesPerView: 2.7,
+    navigation: {
+      prevEl: '.articles__btn--prev',
+      nextEl: '.articles__btn--next',
     },
   });
 };
