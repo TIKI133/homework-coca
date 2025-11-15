@@ -31,5 +31,16 @@ export const useArticlesSlider = () => {
       prevEl: '.articles__btn--prev',
       nextEl: '.articles__btn--next',
     },
+    breakpoints: {
+      321: {
+        slidesPerView: 1,
+      },
+      577: {
+        slidesPerView: 2,
+      },
+      1201: {
+        slidesPerView: 2.7,
+      },
+    }
   });
 };
